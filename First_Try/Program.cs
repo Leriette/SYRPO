@@ -5,18 +5,27 @@ class Program
     static void Main()
     {
         Console.WriteLine("Простой калькулятор");
-        Console.Write("Введите выражение: ");
-        string input = Console.ReadLine();
 
-        try
+        while (true)
         {
-            double result = Evaluate(input);
-            Console.WriteLine($"Результат: {result}");
+            Console.Write("Введите выражение (или 'exit' для выхода): ");
+            string input = Console.ReadLine();
+
+            if (input.ToLower() == "exit")
+                break;
+
+            try
+            {
+                double result = Evaluate(input);
+                Console.WriteLine($"Результат: {result}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка: {ex.Message}");
+            }
         }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Ошибка: {ex.Message}");
-        }
+
+        Console.WriteLine("Работа завершена.");
     }
 
     static double Evaluate(string expression)
