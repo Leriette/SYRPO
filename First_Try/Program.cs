@@ -1,10 +1,26 @@
-﻿namespace First_Try
+﻿using System;
+
+class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
+        Console.WriteLine("Простой калькулятор");
+        Console.Write("Введите выражение: ");
+        string input = Console.ReadLine();
+
+        try
         {
-            Console.WriteLine("Это начало работы!");
+            double result = Evaluate(input);
+            Console.WriteLine($"Результат: {result}");
         }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Ошибка: {ex.Message}");
+        }
+    }
+
+    static double Evaluate(string expression)
+    {
+        return Convert.ToDouble(new System.Data.DataTable().Compute(expression, null));
     }
 }
