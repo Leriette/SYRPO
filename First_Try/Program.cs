@@ -14,23 +14,7 @@ class Program
             if (input.ToLower() == "exit")
                 break;
 
-            try
-            {
-                double result = Evaluate(input);
-                Console.WriteLine($"Результат: {result}");
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Ошибка: Некорректный формат ввода.");
-            }
-            catch (DivideByZeroException)
-            {
-                Console.WriteLine("Ошибка: Деление на ноль.");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Ошибка: {ex.Message}");
-            }
+           
         }
 
         Console.WriteLine("Работа завершена.");
