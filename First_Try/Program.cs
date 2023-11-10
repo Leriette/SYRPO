@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Калькулятор_main");
+        Console.WriteLine("Калькулятор");
 
         while (true)
         {
@@ -17,7 +17,7 @@ class Program
            
         }
 
-        Console.WriteLine("Работа завершена.");
+        Console.WriteLine("Работа завершена");
     }
 
     static double Evaluate(string expression)
