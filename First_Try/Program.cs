@@ -4,8 +4,8 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Калькулятор_main");
 
+<<<<<<< HEAD
         while (true)
         {
             Console.Write("Введите выражение (или 'exit' для выхода): ");
