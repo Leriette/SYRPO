@@ -24,4 +24,20 @@ class Program
     {
         return Convert.ToDouble(new System.Data.DataTable().Compute(expression, null));
     }
+            {
+                Console.WriteLine("Ошибка: Деление на ноль.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка: {ex.Message}");
+            }
+        }
+
+        Console.WriteLine("Работа завершена.");
+    }
+
+    static double Evaluate(string expression)
+    {
+        return Convert.ToDouble(new System.Data.DataTable().Compute(expression, null));
+    }
 }
