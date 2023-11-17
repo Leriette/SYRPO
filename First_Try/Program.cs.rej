@@ -1,0 +1,10 @@
+diff a/First_Try/Program.cs b/First_Try/Program.cs	(rejected hunks)
+@@ -4,7 +4,7 @@
+ {
+     static void Main()
+     {
+-        Console.WriteLine("Калькулятор_main");
++        Console.WriteLine("Калькулятор");
+ 
+         while (true)
+         {

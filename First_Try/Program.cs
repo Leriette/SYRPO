@@ -4,6 +4,10 @@ class Program
 {
     static void Main()
     {
+<<<<<<< HEAD
+=======
+        Console.WriteLine("Калькулятор");
+>>>>>>> a66b24e1df527dbeae56eb738537478dc5165e42
 
 <<<<<<< HEAD
         while (true)
