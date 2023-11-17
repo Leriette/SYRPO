@@ -5,6 +5,7 @@ class Program
     static void Main()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         Console.WriteLine("Калькулятор");
 >>>>>>> a66b24e1df527dbeae56eb738537478dc5165e42
@@ -28,4 +29,12 @@ class Program
     {
         return Convert.ToDouble(new System.Data.DataTable().Compute(expression, null));
     }
+=======
+        Console.WriteLine("Калькулятор_2");
+
+     
+    }
+
+   
+>>>>>>> 7ba79dc39552f2ea4d8468678fb457b5b34ae7c7
 }
