@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Калькулятор_1");
+        Console.WriteLine("Калькулятор_2");
 
      
     }
