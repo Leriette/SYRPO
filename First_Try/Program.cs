@@ -4,9 +4,9 @@ class Program
 {
     static void Main()
     {
-        int a=2, b=3, c=0;
+        int a=2, b=3, c=1;
         Console.WriteLine("Калькулятор");
-        int d = a + b;
+        int d = a + b+c;
         Console.WriteLine(d+c);
     }
 }
